@@ -29,7 +29,7 @@ class Child extends React.Component {
       <>
         <h3>Hi I'm Krypton, Dad's Child and I'm HUNGRY</h3>
         <p>I am Krypton, I'm SOOO HUNGRY and have had {this.props.kryptonsFood} cups of food today!</p>
-        <button onClick={this.feedLucky}>FEEEED MEEE!</button>
+        <button onClick={this.feedKrypton}>FEEEED MEEE!</button>
         {imageElements}
       </>
     );

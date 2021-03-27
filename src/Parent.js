@@ -26,9 +26,12 @@ class Parent extends React.Component {
         <Child
           luckysFood={this.state.luckysFood}
           calculateFood={this.calculateFood}
+          showFavePic={this.props.showFavePic}
         />
       </>
     );
 
   }
 }
+
+export default Parent;

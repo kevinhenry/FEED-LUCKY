@@ -6,14 +6,14 @@ class Parent extends React.Component {
     super(props);
     this.state = {
       myStash: 42,
-      luckysFood: 0,
+      kryptonsFood: 0,
     }
   }
 
   calculateFood = () => {
     this.setState({
       myStash: this.state.myStash -1,
-      luckysFood: this.state.luckysFood +1,
+      kryptonsFood: this.state.kryptonsFood +1,
     })
   }
 
@@ -21,10 +21,10 @@ class Parent extends React.Component {
     console.log('parent', this.props)
     return(
       <>
-        <h2>Hi I'm Ryan, Lucky's Parent</h2>
-        <p>I have a food stash for Lucky of {this.state.myStash} cups</p>
+        <h2>Hi I'm Kevin, Krypton's Parent</h2>
+        <p>I have a food stash for Krypton of {this.state.myStash} cups</p>
         <Child
-          luckysFood={this.state.luckysFood}
+          kryptonsFood={this.state.kryptonsFood}
           calculateFood={this.calculateFood}
           showFavePic={this.props.showFavePic}
         />

@@ -6,8 +6,8 @@ import goat from './assets/goat.jpg';
 
 class Child extends React.Component {
 
-  feedLucky = () => {
-    console.log('lucky wants food');
+  feedKrypton = () => {
+    console.log('krypton wants food');
     this.props.calculateFood();
   }
 
@@ -16,8 +16,8 @@ class Child extends React.Component {
     let imageElements = pics.map((pic, index) => (
       <img
         src={pic}
-        alt="lucky"
-        title="lucky"
+        alt="krypton"
+        title="krypton"
         width={150}
         key={index}
         onClick={() => this.props.showFavePic(pic)}
@@ -27,8 +27,8 @@ class Child extends React.Component {
     console.log('child props', this.props)
     return(
       <>
-        <h3>Hi I'm Lucky, Dad's Child and I'm HUNGRY</h3>
-        <p>I am Lucky, I'm SOOO HUNGRY and have had {this.props.luckysFood} cups of food today!</p>
+        <h3>Hi I'm Krypton, Dad's Child and I'm HUNGRY</h3>
+        <p>I am Krypton, I'm SOOO HUNGRY and have had {this.props.kryptonsFood} cups of food today!</p>
         <button onClick={this.feedLucky}>FEEEED MEEE!</button>
         {imageElements}
       </>
